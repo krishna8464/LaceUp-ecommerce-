@@ -1,19 +1,20 @@
 const mongoose = require("mongoose");
 
-const menSchema = mongoose.Schema({
+const favSchema = mongoose.Schema({
     product:String,
     name:String,
     tilname: String,
     price: Number,
     compvalue: String,
     stars: String,
-    rating: Number
+    rating: Number,
+    userID:String
 },{
     versionKey:false
 })
 
-const MenModel = mongoose.model("men",menSchema);
+const FavModel = mongoose.model("favirote",favSchema);
 
 module.exports={
-    MenModel
+    FavModel
 }

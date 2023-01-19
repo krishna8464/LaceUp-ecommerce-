@@ -1,19 +1,20 @@
 const mongoose = require("mongoose");
 
-const womenSchema = mongoose.Schema({
+const cartSchema = mongoose.Schema({
     product:String,
     name:String,
     tilname: String,
     price: Number,
     compvalue: String,
     stars: String,
-    rating: Number
+    rating: Number,
+    userID:String
 },{
     versionKey:false
 })
 
-const WomenModel = mongoose.model("women",womenSchema);
+const CartModel = mongoose.model("cart",cartSchema);
 
 module.exports={
-    WomenModel
+    CartModel
 }
