@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://kit.fontawesome.com/6614217c3b.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./images/trainers.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>LaceUP</title>
+</head>
+<body>
+    <br>
+    <div class="cont">
+        <!-- header -->
+        <div id="header">
+            <header>Long weekend sale: Take an extra 40% off items labeled EXTRA 40% OFF. Plus save 25-40% on a large selections of items. Ends 31/01/2023.</header>
+            <div id="options"><span><a href="#">Stores & events</a> | <a href="">Shopping services</a> | <a href="#">INR</a></span><span><a href="login.html">Login</a> | <a href="signup.html">Signup</a></span></div><hr>
+        </div>
+        <!-- navbar -->
+        <div id="navbar">
+            <div id="upper">
+                <div id="left"><a href="index.html"><img id="logo" src="./images/trainers.png" alt="logo"></a></div>
+                <div id="right">
+                    <!-- <form id="srchform"> -->
+                        <div id="srchform">
+                        <input id="search" type="text" placeholder="Search Brands" name="search">
+                        <button id="srchbtn" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                    <!-- </form> -->
+                </div>
+            </div>
+            <div id="lower">
+                <div class="items" onclick="women()" id="women">Women</div>
+                <div class="items" onclick="men()" id="shoes">Men</div>
+                <div class="items" onclick="kids()" id="handbag">Kids</div>
+                <div class="items" onclick="accessories()" id="jwell">Accessories</div>
+                <div class="items" onclick="athletic()" id="men">Athletic & Sneakers</div>
+                <div class="items" onclick="brands()" id="kids">Brands</div>
+                <div class="items" onclick="clearance()" id="home">Clearance </div>
+            </div>
+            <hr>
+
+            <!-- womens dropdown starts-->
+            <div class="dropdown" id="womendrop">
+                <div>
+                    <ul class="ul">
+                        <li class="ulhead">Shoes</li>
+                        <li><a href="#" style="text-decoration: none; color: black;">All Women's Shoes</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Sandals</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Heels</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Flats</a></li>
+                        <li><a href="" style="text-decoration: none; color: black;">Boots & Booties</a></li>
+                    </ul>
+                    <ul class="ul">
+                        <li class="ulhead">Sale & Clearance</li>
+                        <li>Shop All</li>
+                        <li>Boots: 20-50% off</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="ul">
+                        <li class="ulhead">Shoes By Style</li>
+                        <li><a href="#" style="text-decoration: none; color: black;">All Shoes</a></li>
+                        <li>Ankle Boots & Booties</li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Boots</a></li>
+                        <li>Comfort</li>
+                        <li>Espadrillies</li>
+                        <li>Flats</li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Loafers & Oxfords</a></li>
+                        <li>Mules & Slides</li>
+                        <li>Pumps</li>
+                        <li>Sandals</li>
+                        <li>Slippers</li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Sneakers</a></li>
+                        <li>Wedges & Platforms</li>
+                        <li>Winter & Snow Boots</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="ul">
+                        <li class="ulhead">Featured Designers</li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Designers A-Z</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Dolce & Gabbana</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Jimmy Choo</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Salvatore Ferragamo</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Sam Edelman</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Stuart Weitzman</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Tory Burch</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Valentino Garavani</a></li>
+                    </ul>
+                    <ul class="ul">
+                        <li class="ulhead">New & Noteworthy</li>
+                        <li>Valentine's Day Gifts</li>
+                        <li>New Arrivals</li>
+                        <li>Best Sellers</li>
+                        <li>Shoes Under RS.59000</li>
+                        <li>150th Anniversary Exclusives</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="ul">
+                        <li class="ulhead">What to Wear For</li>
+                        <li>Back To The Office</li>
+                        <li>Going Out</li>
+                        <li>Vacation</li>
+                        <li>Wedding</li>
+                        <li>Vacation</li>
+                    </ul>
+                    <ul class="ul">
+                        <li class="ulhead">Men Shoes</li>
+                        <li>Shop All</li>
+                    </ul>
+                </div>
+                <div><img width="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPT-UJuyfRqU61BfkAmQpDxx7kNmYqEmjoUQ&usqp=CAU" alt="img"><br>
+                <h4>Shop New Sneakers</h4>
+                </div>
+            </div> 
+            <!-- womens dropdown ends -->
+
+        <!-- men dropdown  starts-->
+            <div class="dropdown" id="mendrop">
+                <div>
+                    <ul class="ul">
+                        <li class="ulhead">Shoes</li>
+                        <li><a href="#" style="text-decoration: none; color: black;">All Men's Shoes</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Loafers & Slip-On Shoes</a>/li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Slippers</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Casual Shoes</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Boots</a></li>
+                    </ul>
+                    <ul class="ul">
+                        <li class="ulhead">Sale & Clearance</li>
+                        <li>Shop All</li>
+                        <li>Boots: 20-50% off</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="ul">
+                        <li class="ulhead">Shoes By Style</li>
+                        <li><a href="#" style="text-decoration: none; color: black;">All Shoes</a></li>
+                        <li>Ankle Boots & Booties</li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Boots</a></li>
+                        <li>Comfort</li>
+                        <li>Espadrillies</li>
+                        <li>Flats</li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Loafers & Oxfords</a></li>
+                        <li>Mules & Slides</li>
+                        <li>Pumps</li>
+                        <li>Sandals</li>
+                        <li>Slippers</li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Sneakers</a></li>
+                        <li>Wedges & Platforms</li>
+                        <li>Winter & Snow Boots</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="ul">
+                        <li class="ulhead">Featured Designers</li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Designers A-Z</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;" style="text-decoration: none; color: black;">Dolce & Gabbana</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Jimmy Choo</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Salvatore Ferragamo</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Sam Edelman</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Stuart Weitzman</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Tory Burch</a></li>
+                        <li><a href="#" style="text-decoration: none; color: black;">Valentino Garavani</a></li>
+                    </ul>
+                    <ul class="ul">
+                        <li class="ulhead">New & Noteworthy</li>
+                        <li>Valentine's Day Gifts</li>
+                        <li>New Arrivals</li>
+                        <li>Best Sellers</li>
+                        <li>Shoes Under RS.59000</li>
+                        <li>150th Anniversary Exclusives</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="ul">
+                        <li class="ulhead">What to Wear For</li>
+                        <li>Back To The Office</li>
+                        <li>Going Out</li>
+                        <li>Vacation</li>
+                        <li>Wedding</li>
+                        <li>Vacation</li>
+                    </ul>
+                    <ul class="ul">
+                        <li class="ulhead">Men Shoes</li>
+                        <li>Shop All</li>
+                    </ul>
+                </div>
+                <div><img width="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvSZnfmtJ_YVLhC6xC_IuR7WWfosQhtpQgRg&usqp=CAU" alt="img"><br>
+                <h4>Shop New Sneakers</h4>
+                </div>
+            </div> 
+        <!-- men dropdown ends -->
+
+        <!-- kids dropdown starts -->
+        <div class="dropdown" id="kiddrop">
+            <div>
+                <ul class="ul">
+                    <li class="ulhead">Shoes</li>
+                    <li><a href="#" style="text-decoration: none; color: black;">All Kid's Shoes</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Loafers & Slip-On Shoes</a>/li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Slippers</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Casual Shoes</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Boots</a></li>
+                </ul>
+                <ul class="ul">
+                    <li class="ulhead">Sale & Clearance</li>
+                    <li>Shop All</li>
+                    <li>Boots: 20-50% off</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ul">
+                    <li class="ulhead">Shoes By Style</li>
+                    <li><a href="#" style="text-decoration: none; color: black;">All Shoes</a></li>
+                    <li>Ankle Boots & Booties</li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Boots</a></li>
+                    <li>Comfort</li>
+                    <li>Espadrillies</li>
+                    <li>Flats</li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Loafers & Oxfords</a></li>
+                    <li>Mules & Slides</li>
+                    <li>Pumps</li>
+                    <li>Sandals</li>
+                    <li>Slippers</li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Sneakers</a></li>
+                    <li>Wedges & Platforms</li>
+                    <li>Winter & Snow Boots</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ul">
+                    <li class="ulhead">Featured Designers</li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Designers A-Z</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;" style="text-decoration: none; color: black;">Dolce & Gabbana</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Jimmy Choo</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Salvatore Ferragamo</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Sam Edelman</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Stuart Weitzman</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Tory Burch</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Valentino Garavani</a></li>
+                </ul>
+                <ul class="ul">
+                    <li class="ulhead">New & Noteworthy</li>
+                    <li>Valentine's Day Gifts</li>
+                    <li>New Arrivals</li>
+                    <li>Best Sellers</li>
+                    <li>Shoes Under RS.59000</li>
+                    <li>150th Anniversary Exclusives</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ul">
+                    <li class="ulhead">What to Wear For</li>
+                    <li>Back To The Office</li>
+                    <li>Going Out</li>
+                    <li>Vacation</li>
+                    <li>Wedding</li>
+                    <li>Vacation</li>
+                </ul>
+                <ul class="ul">
+                    <li class="ulhead">Men Shoes</li>
+                    <li>Shop All</li>
+                </ul>
+            </div>
+            <div><img width="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGOUQ9FYKezqTYfamjv_O6JHYTSH5ReEmXEw&usqp=CAU" alt="img"><br>
+            <h4>Shop New Sneakers</h4>
+            </div>
+        </div> 
+        <!-- kids dropdown ends -->
+
+        <!-- accessors dropdown starts -->
+        <div class="dropdown" id="accdrop">
+            <div>
+                <ul class="ul">
+                    <li class="ulhead">Shoes</li>
+                    <li><a href="#" style="text-decoration: none; color: black;">All Accessories</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Crossbody Bags</a>/li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Evening & Wedding Bags</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Leather Bags</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Tote Bags</a></li>
+                </ul>
+                <ul class="ul">
+                    <li class="ulhead">Sale & Clearance</li>
+                    <li>Shop All</li>
+                    <li>Boots: 20-50% off</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ul">
+                    <li class="ulhead">Shoes By Style</li>
+                    <li><a href="#" style="text-decoration: none; color: black;">All Shoes</a></li>
+                    <li>Ankle Boots & Booties</li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Boots</a></li>
+                    <li>Comfort</li>
+                    <li>Espadrillies</li>
+                    <li>Flats</li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Loafers & Oxfords</a></li>
+                    <li>Mules & Slides</li>
+                    <li>Pumps</li>
+                    <li>Sandals</li>
+                    <li>Slippers</li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Sneakers</a></li>
+                    <li>Wedges & Platforms</li>
+                    <li>Winter & Snow Boots</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ul">
+                    <li class="ulhead">Featured Designers</li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Designers A-Z</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;" style="text-decoration: none; color: black;">Dolce & Gabbana</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Jimmy Choo</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Salvatore Ferragamo</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Sam Edelman</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Stuart Weitzman</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Tory Burch</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Valentino Garavani</a></li>
+                </ul>
+                <ul class="ul">
+                    <li class="ulhead">New & Noteworthy</li>
+                    <li>Valentine's Day Gifts</li>
+                    <li>New Arrivals</li>
+                    <li>Best Sellers</li>
+                    <li>Shoes Under RS.59000</li>
+                    <li>150th Anniversary Exclusives</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ul">
+                    <li class="ulhead">What to Wear For</li>
+                    <li>Back To The Office</li>
+                    <li>Going Out</li>
+                    <li>Vacation</li>
+                    <li>Wedding</li>
+                    <li>Vacation</li>
+                </ul>
+                <ul class="ul">
+                    <li class="ulhead">Men Shoes</li>
+                    <li>Shop All</li>
+                </ul>
+            </div>
+            <div><img width="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmlMahM40vQGBR9QLQYF6anwLV6GPDB6a-bQ&usqp=CAU" alt="img"><br>
+            <h4>Shop New Sneakers</h4>
+            </div>
+        </div> 
+        <!-- accessors dropdown ends -->
+
+        <!-- athletic and sneakers starts -->
+        <div class="dropdown" id="atletdrop">
+            <div>
+                <ul class="ul">
+                    <li class="ulhead">Shop by Gender</li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Women's Athletic Shoes</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Men's Athletic & Sneakers</a>/li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Kids' Athletic & Sneakers</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Slip-On Sneakers</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Tote Bags</a></li>
+                </ul>
+                <ul class="ul">
+                    <li class="ulhead">Sale & Clearance</li>
+                    <li>Shop All</li>
+                    <li>Boots: 20-50% off</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ul">
+                    <li class="ulhead">Shoes By Style</li>
+                    <li><a href="#" style="text-decoration: none; color: black;">All Shoes</a></li>
+                    <li>Ankle Boots & Booties</li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Boots</a></li>
+                    <li>Comfort</li>
+                    <li>Espadrillies</li>
+                    <li>Flats</li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Loafers & Oxfords</a></li>
+                    <li>Mules & Slides</li>
+                    <li>Pumps</li>
+                    <li>Sandals</li>
+                    <li>Slippers</li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Sneakers</a></li>
+                    <li>Wedges & Platforms</li>
+                    <li>Winter & Snow Boots</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ul">
+                    <li class="ulhead">Featured Designers</li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Designers A-Z</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;" style="text-decoration: none; color: black;">Dolce & Gabbana</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Jimmy Choo</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Salvatore Ferragamo</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Sam Edelman</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Stuart Weitzman</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Tory Burch</a></li>
+                    <li><a href="#" style="text-decoration: none; color: black;">Valentino Garavani</a></li>
+                </ul>
+                <ul class="ul">
+                    <li class="ulhead">New & Noteworthy</li>
+                    <li>Valentine's Day Gifts</li>
+                    <li>New Arrivals</li>
+                    <li>Best Sellers</li>
+                    <li>Shoes Under RS.59000</li>
+                    <li>150th Anniversary Exclusives</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ul">
+                    <li class="ulhead">What to Wear For</li>
+                    <li>Back To The Office</li>
+                    <li>Going Out</li>
+                    <li>Vacation</li>
+                    <li>Wedding</li>
+                    <li>Vacation</li>
+                </ul>
+                <ul class="ul">
+                    <li class="ulhead">Men Shoes</li>
+                    <li>Shop All</li>
+                </ul>
+            </div>
+            <div><img width="100%" src="https://images.dsw.com/is/image/DSWShoes/11242022_nav_deals_editorial.png?impolicy=qlt-medium&imwidth=1011&imdensity=1" alt="img"><br>
+            <h4>Shop New Sneakers</h4>
+            </div>
+        </div> 
+        <!-- athletic and sneakers ends -->
+
+       <!-- brands starts -->
+       <div class="dropdown" id="branddrop">
+        <div>
+            <ul class="ul">
+                <li class="ulhead">Shop All Brands</li>
+                <li><a href="#" style="text-decoration: none; color: black;">Brands Customers Love</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Adidas</a>/li>
+                <li><a href="#" style="text-decoration: none; color: black;">Brooks</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Cole Haan</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Crocs</a></li>
+            </ul>
+            <ul class="ul">
+                <li class="ulhead">Sale & Clearance</li>
+                <li>Shop All</li>
+                <li>Boots: 20-50% off</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="ul">
+                <li class="ulhead">Shoes By Style</li>
+                <li><a href="#" style="text-decoration: none; color: black;">All Shoes</a></li>
+                <li>Ankle Boots & Booties</li>
+                <li><a href="#" style="text-decoration: none; color: black;">Boots</a></li>
+                <li>Comfort</li>
+                <li>Espadrillies</li>
+                <li>Flats</li>
+                <li><a href="#" style="text-decoration: none; color: black;">Loafers & Oxfords</a></li>
+                <li>Mules & Slides</li>
+                <li>Pumps</li>
+                <li>Sandals</li>
+                <li>Slippers</li>
+                <li><a href="#" style="text-decoration: none; color: black;">Sneakers</a></li>
+                <li>Wedges & Platforms</li>
+                <li>Winter & Snow Boots</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="ul">
+                <li class="ulhead">Featured Designers</li>
+                <li><a href="#" style="text-decoration: none; color: black;">Designers A-Z</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;" style="text-decoration: none; color: black;">Dolce & Gabbana</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Jimmy Choo</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Salvatore Ferragamo</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Sam Edelman</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Stuart Weitzman</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Tory Burch</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Valentino Garavani</a></li>
+            </ul>
+            <ul class="ul">
+                <li class="ulhead">New & Noteworthy</li>
+                <li>Valentine's Day Gifts</li>
+                <li>New Arrivals</li>
+                <li>Best Sellers</li>
+                <li>Shoes Under RS.59000</li>
+                <li>150th Anniversary Exclusives</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="ul">
+                <li class="ulhead">What to Wear For</li>
+                <li>Back To The Office</li>
+                <li>Going Out</li>
+                <li>Vacation</li>
+                <li>Wedding</li>
+                <li>Vacation</li>
+            </ul>
+            <ul class="ul">
+                <li class="ulhead">Men Shoes</li>
+                <li>Shop All</li>
+            </ul>
+        </div>
+        <div><img width="100%" src="https://images.dsw.com/is/image/DSWShoes/P221696_nav_cv?impolicy=qlt-medium&imwidth=1011&imdensity=1" alt="img"><br>
+        <h4>Shop New Sneakers</h4>
+        </div>
+       </div> 
+       <!-- brands ends -->
+
+       <!-- clearence starts -->
+       <div class="dropdown" id="cleardrop">
+        <div>
+            <ul class="ul">
+                <li class="ulhead">Top Deals</li>
+                <li><a href="#" style="text-decoration: none; color: black;">New Markdowns</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Up to 50% off Shoes & Accessories</a>/li>
+                <li><a href="#" style="text-decoration: none; color: black;">Women's Under $30</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Men's Under $50</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Kids' Under $25</a></li>
+            </ul>
+            <ul class="ul">
+                <li class="ulhead">Sale & Clearance</li>
+                <li>Shop All</li>
+                <li>Boots: 20-50% off</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="ul">
+                <li class="ulhead">Shoes By Style</li>
+                <li><a href="#" style="text-decoration: none; color: black;">All Shoes</a></li>
+                <li>Ankle Boots & Booties</li>
+                <li><a href="#" style="text-decoration: none; color: black;">Boots</a></li>
+                <li>Comfort</li>
+                <li>Espadrillies</li>
+                <li>Flats</li>
+                <li><a href="#" style="text-decoration: none; color: black;">Loafers & Oxfords</a></li>
+                <li>Mules & Slides</li>
+                <li>Pumps</li>
+                <li>Sandals</li>
+                <li>Slippers</li>
+                <li><a href="#" style="text-decoration: none; color: black;">Sneakers</a></li>
+                <li>Wedges & Platforms</li>
+                <li>Winter & Snow Boots</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="ul">
+                <li class="ulhead">Featured Designers</li>
+                <li><a href="#" style="text-decoration: none; color: black;">Designers A-Z</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;" style="text-decoration: none; color: black;">Dolce & Gabbana</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Jimmy Choo</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Salvatore Ferragamo</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Sam Edelman</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Stuart Weitzman</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Tory Burch</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Valentino Garavani</a></li>
+            </ul>
+            <ul class="ul">
+                <li class="ulhead">New & Noteworthy</li>
+                <li>Valentine's Day Gifts</li>
+                <li>New Arrivals</li>
+                <li>Best Sellers</li>
+                <li>Shoes Under RS.59000</li>
+                <li>150th Anniversary Exclusives</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="ul">
+                <li class="ulhead">What to Wear For</li>
+                <li>Back To The Office</li>
+                <li>Going Out</li>
+                <li>Vacation</li>
+                <li>Wedding</li>
+                <li>Vacation</li>
+            </ul>
+            <ul class="ul">
+                <li class="ulhead">Men Shoes</li>
+                <li>Shop All</li>
+            </ul>
+        </div>
+        <div><img width="100%" src="https://images.dsw.com/is/image/DSWShoes/11242022_nav_deals_editorial.png?impolicy=qlt-medium&imwidth=1011&imdensity=1" alt="img"><br>
+        <h4>Shop New Sneakers</h4>
+        </div>
+       </div> 
+       <!-- clearence ends -->
+
+        
+     </div>
+
+
+     <div id="banner">
+        <div><img src="https://images.dsw.com/is/image/DSWShoes/P222162_ft_boots?impolicy=qlt-medium&imwidth=1400&imdensity=1" alt=""></div>
+        <div class="goto">
+            <div class="innergoto">
+                <div>Need-Now Boots Under $100</div>
+                <div>Your kind of boots at your kind of prices.</div>
+                <div>
+                    <button>SHOP WOMEN'S</button><button>SHOP MEN'S</button>
+                </div>
+            </div>
+         </div>
+     </div>
+    
+     
+
+
+
+
+     <!-- footer starts -->
+     <div class="footer">
+        <div class="features">
+            <div id="footerlogo">
+                <a href="#"><img id="wondermallfooter" src="./images//trainers.png" alt="Logo"></a>
+            </div>
+            <div id="quality">
+                <b>High Quality Selection</b>
+                <p>Total product quality control for peace of mind</p>
+            </div>
+            <div id="affordable">
+                <b>Affordable Prices</b>
+                <p>Factory direct prices for maximum savings</p>
+            </div>
+            <div id="shipping">
+                <b>Express Shipping</b>
+                <p>Fast, reliable delivery from global warehouses</p>
+            </div>
+            <div id="sales">
+                <b>Worry-free After-sales</b>
+                <p>Instant access to professional support for users</p>
+            </div>
+        </div>
+        <div class="mailsocial">
+            <div id="maildiv">
+                <span>Newsletter</span>
+                <input id="mail" type="text" placeholder="Enter Email to get 50 Points">
+                <button id="subscribe">Subscribe</button>
+            </div>
+            <div id="socialdiv"></div>
+        </div>
+        <div class="info">
+            <div id="serv1">
+                <b>Company Information</b>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Top Searches</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Intellectual Property Policy</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Report Security Issue</a></li>
+                    <li><a href="#">Cookies Policy</a></li>
+                    <li><a href="#">Top Brands</a></li>
+                </ul>
+            </div>
+            <div id="serv2">
+                <b>Customer Service</b>
+                <ul>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">My Favorites</a></li>
+                    <li><a href="#">FAQ For Newsletter Subscription</a></li>
+                    <li><a href="#">My Points</a></li>
+                    <li><a href="#">Warranty and Return</a></li>
+                    <li><a href="#">Payment Methods</a></li>
+                    <li><a href="#">Deposit Expansion</a></li>
+                    <li><a href="#">FAQ & Support</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">FAQs about COVID-19</a></li>
+                </ul>
+            </div>
+            <div id="serv3">
+                <b>Other Business</b>
+                <ul>
+                    <li><a href="#">Partnership Programs</a></li>
+                    <li><a href="#">Associate Program</a></li>
+                    <li><a href="#">Merchant Program</a></li>
+                    <li><a href="#">Visitor's Care</a></li>
+                    <li><a href="#">Delivery Partners</a></li>
+                    <li><a href="#">Packing Partners</a></li>
+                    <li><a href="#">Sell on LaceUP Market</a></li>
+                </ul>
+            </div>
+            <div id="serv4">
+                <b>LaceUP Market</b>
+                <ul>
+                    <li><a href="#">Save $3 with App & New User Only</a></li>
+                    <li><a href="#">Customer Bill of Rights</a></li>
+                    <li><a href="#">Product Recalls</a></li>
+                    <li><a href="#">Internet Based Ads</a></li>
+                    <li><a href="#">CA Transparency in Supply Chains Act</a></li>
+                    <li><a href="#">Do Not Sell or Share My Personal Information</a></li>
+                    <li><a href="#">LaceUP Ofiicial Blog</a></li>
+                    <li><a href="#">LaceUP Wallet Instruction</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer>Copyright © 2022-2023 LaceUP.com. All Rights Reserved by Vamshi Krishna.</footer>
+      </div>
+</div>
+    
+</body>
+</html>
+<script src="./scripts/index.js"></script>
