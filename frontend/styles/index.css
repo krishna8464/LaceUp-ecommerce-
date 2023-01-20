@@ -1,0 +1,390 @@
+*{
+    margin:0px;
+    /* font-family:Josefin Sans; */
+}
+*:focus {
+    outline: none;
+}
+.cont{
+    width: 100%;
+    /* border: 2px solid red; */
+}
+header{
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 10px 0px;
+    width: 100%;
+    margin: auto;
+}
+#options{
+    /* border: 2px solid red; */
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    /* text-align: right; */
+    padding: 10px 0px;
+}
+#options>span>a{
+    text-decoration: none;
+}
+#navbar{
+    /* border: 2px solid blue; */
+    width: 90%;
+    margin: auto;
+}
+#upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#left,#right{
+    /* border: 2px solid greenyellow; */
+    height: 85px;
+}
+#left{
+    height: 80px;
+    width: 50px;
+}
+#logo{
+    /* border: 1px solid blue; */
+    height: 100%;
+}
+#search{
+    margin-top: 25px;
+    border: none;
+    padding: 2px;
+    /* width: 100%; */
+    border-bottom: 2px solid black;
+}
+#srchbtn{
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+#lower{
+    /* border: 2px solid red; */
+    width:80% ;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 100%;
+}
+.items{
+    padding-bottom: 10px;
+}
+.items:hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+#womendrop,#mendrop,#kiddrop,#accdrop,#atletdrop,#branddrop,#cleardrop{
+    /* border: 2px solid red; */
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    display: none;  
+    justify-content: space-between;
+    position: absolute;
+    /* height: 80%; */
+}
+
+/* #womendrop{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    display: none;  
+    justify-content: space-between;
+    position: absolute;
+} */
+
+.dropdown>div{
+    margin-top: 25px;
+}
+.ul{
+    list-style:none;
+    padding: 0px;
+    line-height: 30px;
+}
+.dropdown>div{
+    width: 17%;
+    /* border: 1px solid blue; */
+}
+.ulhead{
+    font-weight: bold;
+}
+
+
+
+/* footer below */
+#featured{
+    /* border: 2px solid blue; */
+    width: 95vw;
+    margin: auto;
+    text-align: center;
+}
+#trendhead{
+    border-bottom: 1px solid black;
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+#trending{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+}
+#trending>div{
+    /* border: 1px solid red; */
+    height: 400px;
+    text-align: center;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+#trending>div>img{
+    height: 70%;
+}
+#trending>div>h4{
+    margin-bottom: 10px;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    padding-top: 50px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.features{
+    /* border: 1px solid red; */
+    background-color: white;
+    width: 85%;
+    height: auto;
+    margin:auto;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns:repeat(5,20%);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.features>div{
+    /* border: 1px solid green; */
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+#wondermallfooter{
+    width: 90%;
+}
+.features>div>p{
+    font-size: 12px;
+    color: gray;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left:10px;
+    padding-right: 10px;
+}
+.features>div>b{
+    font-size: 14px;
+    font-family: OpenSans,Arial,Helvetica,sans-serif;
+}
+.mailsocial{
+    width: 85%;
+    margin: auto;
+    /* border: 2px solid red; */
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2,50%);
+}
+#maildiv{
+    display:inline-flex;
+    align-items: center;
+}
+#maildiv>span{
+    margin-right: 10px;
+    font-family: OpenSans,Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    color: rgb(97, 97, 97);
+}
+#mail{
+    height: 35px;
+    width: 55%;
+    border: 1px solid rgb(70, 69, 69);
+    border-right: none;
+}
+#subscribe{
+    /* display: inline-block; */
+    height: 39px;
+    color: white;
+    outline: none;
+    font-size: medium;
+    background-color: black;
+}
+.footer>footer{
+    color: rgb(223, 223, 223);
+    text-align: center;
+    background-color: black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.info{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    margin-bottom: 50px;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4,25%);
+    /* border: 2px solid yellowgreen; */
+}
+
+.info>div>ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 5px;
+}
+.info>div>ul>li>a{
+    font-size: 12px;
+    line-height: 23px;
+    color: rgb(71, 71, 71);
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.info>div>ul>li>a:hover{
+    text-decoration: underline;
+}
+.info>div>b{
+    font-size: 14px;
+    font-family: OpenSans,Arial,Helvetica,sans-serif;
+}
+/* footer ends */
+
+#banner>div>img{
+    width: 100%;
+    height: 100%
+}
+
+#banner{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.goto{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.651);
+    width:auto;
+    /* opacity: 60%; */
+    position: absolute;
+    
+    /* max-height: fit-content; */
+    color: white; 
+    max-width: 100%;
+}
+.innergoto>div:nth-child(3){
+    display:  flex;
+    justify-content: space-evenly;
+}
+.innergoto>div:nth-child(1){
+    max-width: fit-content;
+    font-size: 30px;
+}
+
+.innergoto>div>button{
+    border: none;
+    border-radius: 3px;
+    padding: 5px 20px 5px 20px;
+    margin-top: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    max-width: 100%;
+
+}
+
+@media screen and (min-width:0px) and (max-width:730px) {
+    #banner{
+        flex-direction: column;
+    }
+    .goto{
+        flex-direction: column;
+        margin-top: 50px;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.651);
+        
+    }
+}
+
+
+@media screen and (min-width:0px) and (max-width:516px) {
+    .features{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+      }
+      .features>div{
+        max-width: 100%;
+      }
+      .info{
+        grid-template-columns: repeat(1,25%);
+        text-align: center;
+        justify-content: center;
+       
+        /* border: 2px solid yellowgreen; */
+    }
+    .info>div{
+        max-width: 100%;
+       
+    }
+}
+
+
+ @media screen and (min-width:0px) and (max-width:800px) {
+    .innergoto>div:nth-child(3){
+        
+        flex-direction: column;
+    }
+    #lower{
+        /* border: 2px solid red; */
+        flex-direction: column;
+        margin: auto;
+        max-width: 100%;
+    }
+    #lower>div{
+        display: grid;
+        max-width: 100%;
+    }
+} 
+
+@media screen and (min-width:0px) and (max-width:598px) {
+    #upper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width:0px) and (max-width:630px) {
+    #womendrop,#mendrop,#kiddrop,#accdrop,#atletdrop,#branddrop,#cleardrop{
+        /* border: 2px solid red; */
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+    }
+    #womendrop>div,#mendrop>div,#kiddrop>div,#accdrop>div,#atletdrop>div,#branddrop>div,#cleardrop>div{
+        /* border: 2px solid red; */
+      display: flex;;
+      flex-direction: column;
+      max-width: 100%;
+    }
+
+}
+

@@ -1,0 +1,375 @@
+/* footer below */
+#featured{
+    /* border: 2px solid blue; */
+    width: 95vw;
+    margin: auto;
+    text-align: center;
+}
+#trendhead{
+    border-bottom: 1px solid black;
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+#trending{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+}
+#trending>div{
+    /* border: 1px solid red; */
+    height: 400px;
+    text-align: center;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+#trending>div>img{
+    height: 70%;
+}
+#trending>div>h4{
+    margin-bottom: 10px;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    padding-top: 50px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.features{
+    /* border: 1px solid red; */
+    background-color: white;
+    width: 85%;
+    height: auto;
+    margin:auto;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns:repeat(5,20%);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.features>div{
+    /* border: 1px solid green; */
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+#wondermallfooter{
+    width: 90%;
+}
+.features>div>p{
+    font-size: 12px;
+    color: gray;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left:10px;
+    padding-right: 10px;
+}
+.features>div>b{
+    font-size: 14px;
+    font-family: OpenSans,Arial,Helvetica,sans-serif;
+}
+.mailsocial{
+    width: 85%;
+    margin: auto;
+    /* border: 2px solid red; */
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2,50%);
+}
+#maildiv{
+    display:inline-flex;
+    align-items: center;
+}
+#maildiv>span{
+    margin-right: 10px;
+    font-family: OpenSans,Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    color: rgb(97, 97, 97);
+}
+#mail{
+    height: 35px;
+    width: 55%;
+    border: 1px solid rgb(70, 69, 69);
+    border-right: none;
+}
+#subscribe{
+    /* display: inline-block; */
+    height: 39px;
+    color: white;
+    outline: none;
+    font-size: medium;
+    background-color: black;
+}
+.footer>footer{
+    color: rgb(223, 223, 223);
+    text-align: center;
+    background-color: black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.info{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    margin-bottom: 50px;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4,25%);
+    /* border: 2px solid yellowgreen; */
+}
+
+.info>div>ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 5px;
+}
+.info>div>ul>li>a{
+    font-size: 12px;
+    line-height: 23px;
+    color: rgb(71, 71, 71);
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.info>div>ul>li>a:hover{
+    text-decoration: underline;
+}
+.info>div>b{
+    font-size: 14px;
+    font-family: OpenSans,Arial,Helvetica,sans-serif;
+}
+/* footer ends */
+
+/* login page css starts */
+#signupdet{
+    margin-top: 50px;
+    width: 100%;
+}
+#signupchild{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+}
+#signfirstchild{
+    text-align: center;
+    width:100%;
+   
+}
+
+.setaline{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.setaline>button{
+    display: flex;
+}
+span{
+    color: rgb(19, 125, 217);
+    cursor: pointer;
+}
+.spn{
+    visibility: hidden;
+}
+.setaline>button{
+    background-color: white;
+    color: black;
+    border-color: #202c45;
+    width: 350px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    justify-content: center;
+}
+.setaline>button:hover{
+    background-color: #566583;
+    color: white;
+}
+#signupbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#signupbtn>button{
+    background-color: #f28a14;
+    color: white;
+    width: 350px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+   
+}
+#sideimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 100%;
+}
+#fotterimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 100%;
+}
+#signupbtn>button:hover{
+    background-color: #f7b75e;
+}
+#signsecondchild{
+    /* padding-top: 80px; */
+    width: 100%;
+    text-align: center;
+    
+    
+}
+.rightone{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.rightone>div{
+    margin-left: 10px;
+
+   
+}
+#doit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mail_inbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-color: #566583;
+    max-width: 100%;
+    padding-left: 20px;
+}
+#pass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-color: #566583;
+    max-width: 100%;
+    padding-left: 20px;
+}
+
+#exampleFormControlInput1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-color: #566583;
+    max-width: 100%;
+    padding-left: 20px;
+}
+
+
+/* header css */
+header{
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 10px 0px;
+    width: 100%;
+    margin: auto;
+}
+#options{
+    /* border: 2px solid red; */
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    /* text-align: right; */
+    padding: 10px 0px;
+}
+#options>span>a{
+    text-decoration: none;
+}
+/* header css */
+
+@media screen and (min-width:0px) and (max-width:516px) {
+    .features{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+      }
+      .features>div{
+        max-width: 100%;
+      }
+      .info{
+        grid-template-columns: repeat(1,25%);
+        text-align: center;
+        justify-content: center;
+       
+        /* border: 2px solid yellowgreen; */
+    }
+    .info>div{
+        max-width: 100%;
+       
+    }
+}
+
+@media screen and (min-width:100px) and (max-width:915px) {
+    #user-signup{
+        visibility: hidden;
+        opacity: 0.0;
+        display: none;
+        position: absolute;
+        left: -999999px;
+    }
+
+    #user-signup{
+        margin-top: 40px;
+    }
+    #login{
+        padding: 6px 20px 6px 20px;
+        background-color: white;
+        border-radius: 5px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    #signup{
+        padding: 6px 20px 6px 20px;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    #signupchild{
+       flex-direction: column;
+    }
+}
+/* ends */
