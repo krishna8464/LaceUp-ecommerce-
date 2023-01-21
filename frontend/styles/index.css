@@ -85,8 +85,9 @@ header{
     background-color: rgb(255, 255, 255);
     width: 90%;
     display: none;  
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: absolute;
+    opacity: 100%;
     /* height: 80%; */
 }
 
@@ -295,6 +296,7 @@ header{
     display:  flex;
     justify-content: space-evenly;
 }
+
 .innergoto>div:nth-child(1){
     max-width: fit-content;
     font-size: 30px;
@@ -307,7 +309,9 @@ header{
     margin-top: 3px;
     font-weight: 600;
     cursor: pointer;
+    width: 180px;
     max-width: 100%;
+    
 
 }
 
@@ -349,8 +353,11 @@ header{
 
  @media screen and (min-width:0px) and (max-width:800px) {
     .innergoto>div:nth-child(3){
-        
+       
         flex-direction: column;
+    }
+    .innergoto>div>button{
+        width: 100%;
     }
     #lower{
         /* border: 2px solid red; */
@@ -378,13 +385,124 @@ header{
       flex-direction: column;
       align-items: center;
       margin: auto;
+     
     }
     #womendrop>div,#mendrop>div,#kiddrop>div,#accdrop>div,#atletdrop>div,#branddrop>div,#cleardrop>div{
         /* border: 2px solid red; */
       display: flex;;
       flex-direction: column;
       max-width: 100%;
+     
     }
 
 }
 
+/********************************************************cat starts ************************************************************** */
+#childcat{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+#childcat>div{
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+#childcat>div>div:nth-child(1)>img{
+    width: 250px;
+    height: 250px;
+}
+@media screen and (min-width:1025px) and (max-width:1248px) {
+    #childcat{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (min-width:685px) and (max-width:1025px) {
+    #childcat{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (min-width:0px) and (max-width:685px) {
+    #childcat{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/********************************************************cat ends ************************************************************** */
+
+/********************************************************deal ends ************************************************************** */
+#deal{
+    text-align: center;
+    margin-top: 50px;
+}
+#childdeal{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+#childdeal>div{
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+#childdeal>div>div:nth-child(1)>img{
+    width: 300px;
+    height: 300px;
+}
+
+@media screen and (min-width:675px) and (max-width:1013px) {
+    #childdeal{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (min-width:0px) and (max-width:675px) {
+    #childdeal{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/********************************************************deal ends ************************************************************** */
+
+/********************************************************deal ends ************************************************************** */
+#vip{
+    text-align: center;
+    margin-top: 50px;
+}
+#childvip{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+#childvip>div{
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+#childvip>div>div:nth-child(1)>img{
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    border-radius: 3px;
+}
+#childvip>div>div:nth-child(2){
+    width: 300px;
+}
+
+@media screen and (min-width:675px) and (max-width:1013px) {
+    #childvip{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (min-width:0px) and (max-width:675px) {
+    #childvip{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/********************************************************deal ends ************************************************************** */
