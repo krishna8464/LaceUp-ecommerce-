@@ -16,6 +16,8 @@ function logout(){
     sessionStorage.clear()
 }
 
+
+const hide = document.querySelector(".goto")
 const womendrop = document.getElementById("womendrop")
 const mendrop = document.getElementById("mendrop")
 const kiddrop = document.getElementById("kiddrop")
@@ -26,6 +28,7 @@ const cleardrop = document.getElementById("cleardrop")
 
 
 function women(){
+   
     mendrop.style.display="none"
     kiddrop.style.display="none"
     accdrop.style.display="none"
@@ -34,7 +37,9 @@ function women(){
     cleardrop.style.display="none"
     if(womendrop.style.display==="none"){
         womendrop.style.display="flex"
+        hide.style.display="none"
        }else{
+        hide.style.display="flex"
         womendrop.style.display="none"
        }
 }
@@ -48,7 +53,9 @@ function men(){
     cleardrop.style.display="none"
     if(mendrop.style.display==="none"){
         mendrop.style.display="flex"
+        hide.style.display="none"
        }else{
+        hide.style.display="flex"
         mendrop.style.display="none"
        }
 }
@@ -62,7 +69,9 @@ function kids(){
     cleardrop.style.display="none"
     if(kiddrop.style.display==="none"){
         kiddrop.style.display="flex"
+        hide.style.display="none"
        }else{
+        hide.style.display="flex"
         kiddrop.style.display="none"
        }
 
@@ -77,7 +86,9 @@ function accessories(){
     cleardrop.style.display="none"
     if(accdrop.style.display==="none"){
         accdrop.style.display="flex"
+        hide.style.display="none"
        }else{
+        hide.style.display="flex"
         accdrop.style.display="none"
        }
 }
@@ -91,7 +102,9 @@ function athletic(){
     cleardrop.style.display="none"
     if(atletdrop.style.display==="none"){
         atletdrop.style.display="flex"
+        hide.style.display="none"
        }else{
+        hide.style.display="flex"
         atletdrop.style.display="none"
        }
 }
@@ -105,7 +118,9 @@ function brands(){
     cleardrop.style.display="none"
     if(branddrop.style.display==="none"){
         branddrop.style.display="flex"
+        hide.style.display="none"
        }else{
+        hide.style.display="flex"
         branddrop.style.display="none"
        }
 
@@ -120,10 +135,36 @@ function clearance(){
     branddrop.style.display="none"
     if(cleardrop.style.display==="none"){
         cleardrop.style.display="flex"
+        hide.style.display="none"
        }else{
+        hide.style.display="flex"
         cleardrop.style.display="none"
        }
 
+}
+
+
+// search bar code
+/* <input id="search" type="text" placeholder="Search Brands" name="search">
+</input><button id="srchbtn" type="submit"><i class="fa fa-search"></i></button> */
+
+let searchbar = document.getElementById("search");
+let searchbtn = document.getElementById("srchbtn");
+
+
+function srchbtn(){
+    
+    if(searchbar.value===""){
+            searchbar.placeholder="Please enter the Query"
+            setTimeout(() => {
+                searchbar.placeholder="Search"
+            }, 1000);
+    }else{
+    sessionStorage.setItem("searchquery",searchbar.value);
+    setTimeout(() => {
+        window.location.href="search.html"
+    },1000);
+}
 }
 
 
@@ -134,63 +175,3 @@ function clearance(){
 
 
 
-
-
-
-
-
-
-
-
-// DROPDOWNS
-// let shoes = document.getElementById("shoes");
-// let shoedrop = document.getElementById("drop");
-
-// let bags = document.getElementById("handbag");
-// let bagdrop = document.getElementById("bagdrop");
-
-// let jwell = document.getElementById("jwell");
-// let jwelldrop = document.getElementById("jwelldrop");
-
-
-// shoes.addEventListener("mouseover", myFunction);
-// shoedrop.addEventListener("mouseout", myFunction);
-// function myFunction() {
-//   bagdrop.style.display = "none";
-//   jwelldrop.style.display = "none";
-//   if (shoedrop.style.display === "none") {
-//     shoedrop.style.display = "flex";
-//   } else if (drop.style.display === "flex") {
-//     shoedrop.style.display = "none";
-//   } else {
-//     shoedrop.style.display = "flex";
-//   }
-// }
-
-// bags.addEventListener("mouseover", myFunction2);
-// bagdrop.addEventListener("mouseout", myFunction2);
-// function myFunction2() {
-//   shoedrop.style.display = "none";
-//   jwelldrop.style.display = "none";
-//   if (bagdrop.style.display === "none") {
-//     bagdrop.style.display = "flex";
-//   } else if (bagdrop.style.display === "flex") {
-//     bagdrop.style.display = "none";
-//   } else {
-//     bagdrop.style.display = "flex";
-//   }
-// }
-
-// jwell.addEventListener("mouseover", myFunction3);
-// jwelldrop.addEventListener("mouseout", myFunction3);
-// function myFunction3() {
-//   shoedrop.style.display = "none";
-//   bagdrop.style.display = "none";
-//   if (jwelldrop.style.display === "none") {
-//     jwelldrop.style.display = "flex";
-//   } else if (jwelldrop.style.display === "flex") {
-//     jwelldrop.style.display = "none";
-//   } else {
-//     jwelldrop.style.display = "flex";
-//  }
-// }

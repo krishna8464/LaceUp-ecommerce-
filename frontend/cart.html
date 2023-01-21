@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/cart.css">
     <link rel="stylesheet" href="./styles/index.css">
     <script src="https://kit.fontawesome.com/6614217c3b.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="./images/trainers.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <title>LaceUP</title>
+    <title>LaceUP/cart</title>
 </head>
 <body>
-    <br>
     <div class="cont">
-        <!-- header starts-->
-        <div id="header">
+        <div id="alertshere"></div>
+         <!-- header starts-->
+         <div id="header">
             <header>Long weekend sale: Take an extra 40% off items labeled EXTRA 40% OFF. Plus save 25-40% on a large selections of items. Ends 31/01/2023.</header>
             <div id="options"><span><a href="#">Stores & events</a> | <a href="">Shopping services</a> | <a href="#">INR</a></span><span><a href="login.html">Login</a> | <a href="signup.html">Signup</a></span></div><hr>
         </div>
@@ -28,9 +29,9 @@
                 <div id="right">
                     <!-- <form id="srchform"> -->
                         <div id="srchform">
-                        <input id="search" type="text" placeholder="Search" name="search">
-                        <button id="srchbtn" onclick="srchbtn()" type="submit"><i class="fa fa-search"></i></button>
-                    </div>
+                            <input id="search" type="text" placeholder="Search" name="search">
+                            <button id="srchbtn" onclick="srchbtn()" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
                     <!-- </form> -->
                 </div>
             </div>
@@ -588,252 +589,106 @@
      </div>
      <!-- nav bar ends -->
 
-    <!-- banner staarts -->
-     <div id="banner">
-        <div><img src="./images/P222162_ft_boots.jpg" alt=""></div>
-        <div class="goto">
-            <div class="innergoto">
-                <div>Need-Now Boots Under $100</div>
-                <div>Your kind of boots at your kind of prices.</div>
-                <div>
-                    <button>SHOP WOMEN'S</button><button>SHOP MEN'S</button>
-                </div>
-            </div>
-         </div>
-     </div>
-     <!-- banner ends -->
+     <!-- append here part starts -->
+     <div id="appendhere"></div>
+     <!-- append here part ends -->
 
-     <!-- cata starts -->
-     <div id="cat">
-        <div id="childcat">
-            <div>
-                <div><img src="./images/heels.jpg" alt=""></div>
-                <div>Women's</div>
-                <div><h5>Fashion Heels</h5></div>
-            </div>
-            <div>
-                <div><img src="./images/sandals.jpg" alt=""></div>
-                <div>Women's</div>
-                <div><h5>Sandals and Chappals</h5></div>
-            </div>
-            <div>
-                <div><img src="./images/flats.jpg" alt=""></div>
-                <div>Women's</div>
-                <div><h5>Flats</h5></div>
-            </div>
-            <div>
-                <div><img src="./images/allwomen.jpg" alt=""></div>
-                <div>Women's</div>
-                <div><h5>All Boots</h5></div>
-            </div>
-            <div>
-                <div><img src="./images/loffers.jpg" alt=""></div>
-                <div>Men's</div>
-                <div><h5>Loffers</h5></div>
-            </div>
-            <div>
-                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjNkekABIkWN71kz-4NAltdjDYfkLpY3VSVw&usqp=CAU" alt=""></div>
-                <div>Men's</div>
-                <div><h5>Slippers and Chappals</h5></div>
-            </div>
-            <div>
-                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwO6AJ3Aa4DHHzZWuT6n0CY4CWxT7g8-QVMg&usqp=CAU" alt=""></div>
-                <div>Men's</div>
-                <div><h5>Casual</h5></div>
-            </div>
-            <div>
-                <div><img src="./images//allmen.jpg" alt=""></div>
-                <div>Men's</div>
-                <div><h5>All Boots</h5></div>
-            </div>
+
+
+<!-- footer starts -->
+<div class="footer">
+    <div class="features">
+        <div id="footerlogo">
+            <a href="#"><img id="wondermallfooter" src="./images//trainers.png" alt="Logo"></a>
         </div>
-     </div>
-     <!-- cat ends -->
-
-     <!-- deals starts -->
-     <div id="deal">
-        <div><h1>The Deals To Know</h1></div>
-        <div id="childdeal">
-            <div>
-                <div><img src="./images/75.jpg" alt=""></div>
-                <div><h6>Shop Now</h6></div>
-            </div>
-            <div>
-                <div><img src="./images/casual boots.jpg" alt=""></div>
-                <div><h6>Shop Now</h6></div>
-            </div>
-            <div>
-                <div><img src="./images/dressbooties75.jpg" alt=""></div>
-                <div><h6>Shop Now</h6></div>
-            </div>
-            <div>
-                <div><img src="./images/tallboots60.jpg" alt=""></div>
-                <div><h6>Shop Now</h6></div>
-            </div>
-            <div>
-                <div><img src="./images/heels60.jpg" alt=""></div>
-                <div><h6>Shop Now</h6></div>
-            </div>
-            <div>
-                <div><img src="./images/menboots100.jpg" alt=""></div>
-                <div><h6>Shop Now</h6></div>
-            </div>
-            <div>
-                <div><img src="./images/mensneakers75.jpg" alt=""></div>
-                <div><h6>Shop Now</h6></div>
-            </div>
+        <div id="quality">
+            <b>High Quality Selection</b>
+            <p>Total product quality control for peace of mind</p>
         </div>
-     </div>
-     <!-- deals ends -->
-     <br>
-     <br>
-
-      <!-- banner-2 staarts -->
-      <div id="banner">
-        <div><img src="./images/banner_2.jpg" alt=""></div>
-        <div class="goto">
-            <div class="innergoto">
-                <div>On-Trend Sneakers Under $75</div>
-                <div>Your kind of boots at your kind of prices.</div>
-                <div>
-                    <button>SHOP WOMEN'S</button><button>SHOP MEN'S</button>
-                </div>
-            </div>
-         </div>
-     </div>
-     <!-- banner-2 ends -->
-
-     <!-- vip starts -->
-     <div id="vip">
-        <div><h1>The Deals To Know</h1></div>
-        <div id="childvip">
-            <div>
-                <div><img src="./images/P221696_editorial_email.jpg" alt=""></div>
-                <div>Sign up for emails for the latest VIP perks and exclusives.</div>
-                <div><h6>More Details</h6></div>
-            </div>
-            <div>
-                <div><img src="./images/vip-icon-money-1396-1014.svg" alt=""></div>
-                <div>Make your first purchase as a VIP to get this exclusive offer. Exclusions apply.</div>
-                <div><h6>More Details</h6></div>
-            </div>
-            <div>
-                <div><img src="./images/vip-icon-delivery-1396-1014.svg" alt=""></div>
-                <div>On anything. All the time. (+ Free in-store returns.)</div>
-                <div><h6>More Details</h6></div>
-            </div>
-            <div>
-                <div><img src="./images/vip-icon-gift-1396-1014.svg" alt=""></div>
-                <div>Make sure you've added the big day in your profile so we can celebrate!</div>
-                <div><h6>More Details</h6></div>
-            </div>
-            <div>
-                <div><img src="./images/vip-icon-money-1396-1014.svg" alt=""></div>
-                <div>More points = more Rewards. And more Rewards = more shoes.</div>
-                <div><h6>More Details</h6></div>
-            </div>
+        <div id="affordable">
+            <b>Affordable Prices</b>
+            <p>Factory direct prices for maximum savings</p>
         </div>
-     </div>
-     <!-- vip ends -->
-    
-     
-
-
-
-
-     <!-- footer starts -->
-     <div class="footer">
-        <div class="features">
-            <div id="footerlogo">
-                <a href="#"><img id="wondermallfooter" src="./images//trainers.png" alt="Logo"></a>
-            </div>
-            <div id="quality">
-                <b>High Quality Selection</b>
-                <p>Total product quality control for peace of mind</p>
-            </div>
-            <div id="affordable">
-                <b>Affordable Prices</b>
-                <p>Factory direct prices for maximum savings</p>
-            </div>
-            <div id="shipping">
-                <b>Express Shipping</b>
-                <p>Fast, reliable delivery from global warehouses</p>
-            </div>
-            <div id="sales">
-                <b>Worry-free After-sales</b>
-                <p>Instant access to professional support for users</p>
-            </div>
+        <div id="shipping">
+            <b>Express Shipping</b>
+            <p>Fast, reliable delivery from global warehouses</p>
         </div>
-        <div class="mailsocial">
-            <div id="maildiv">
-                <span>Newsletter</span>
-                <input id="mail" type="text" placeholder="Enter Email to get 50 Points">
-                <button id="subscribe">Subscribe</button>
-            </div>
-            <div id="socialdiv"></div>
+        <div id="sales">
+            <b>Worry-free After-sales</b>
+            <p>Instant access to professional support for users</p>
         </div>
-        <div class="info">
-            <div id="serv1">
-                <b>Company Information</b>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Top Searches</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms and Conditions</a></li>
-                    <li><a href="#">Intellectual Property Policy</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Report Security Issue</a></li>
-                    <li><a href="#">Cookies Policy</a></li>
-                    <li><a href="#">Top Brands</a></li>
-                </ul>
-            </div>
-            <div id="serv2">
-                <b>Customer Service</b>
-                <ul>
-                    <li><a href="#">Shipping Information</a></li>
-                    <li><a href="#">My Favorites</a></li>
-                    <li><a href="#">FAQ For Newsletter Subscription</a></li>
-                    <li><a href="#">My Points</a></li>
-                    <li><a href="#">Warranty and Return</a></li>
-                    <li><a href="#">Payment Methods</a></li>
-                    <li><a href="#">Deposit Expansion</a></li>
-                    <li><a href="#">FAQ & Support</a></li>
-                    <li><a href="#">Sitemap</a></li>
-                    <li><a href="#">FAQs about COVID-19</a></li>
-                </ul>
-            </div>
-            <div id="serv3">
-                <b>Other Business</b>
-                <ul>
-                    <li><a href="#">Partnership Programs</a></li>
-                    <li><a href="#">Associate Program</a></li>
-                    <li><a href="#">Merchant Program</a></li>
-                    <li><a href="#">Visitor's Care</a></li>
-                    <li><a href="#">Delivery Partners</a></li>
-                    <li><a href="#">Packing Partners</a></li>
-                    <li><a href="#">Sell on LaceUP Market</a></li>
-                </ul>
-            </div>
-            <div id="serv4">
-                <b>LaceUP Market</b>
-                <ul>
-                    <li><a href="#">Save $3 with App & New User Only</a></li>
-                    <li><a href="#">Customer Bill of Rights</a></li>
-                    <li><a href="#">Product Recalls</a></li>
-                    <li><a href="#">Internet Based Ads</a></li>
-                    <li><a href="#">CA Transparency in Supply Chains Act</a></li>
-                    <li><a href="#">Do Not Sell or Share My Personal Information</a></li>
-                    <li><a href="#">LaceUP Ofiicial Blog</a></li>
-                    <li><a href="#">LaceUP Wallet Instruction</a></li>
-                </ul>
-            </div>
+    </div>
+    <div class="mailsocial">
+        <div id="maildiv">
+            <span>Newsletter</span>
+            <input id="mail" type="text" placeholder="Enter Email to get 50 Points">
+            <button id="subscribe">Subscribe</button>
         </div>
-        <footer>Copyright © 2022-2023 LaceUP.com. All Rights Reserved by Vamshi Krishna.</footer>
-      </div>
-      <!-- footer ends -->
-</div>
+        <div id="socialdiv"></div>
+    </div>
+    <div class="info">
+        <div id="serv1">
+            <b>Company Information</b>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Top Searches</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Intellectual Property Policy</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Report Security Issue</a></li>
+                <li><a href="#">Cookies Policy</a></li>
+                <li><a href="#">Top Brands</a></li>
+            </ul>
+        </div>
+        <div id="serv2">
+            <b>Customer Service</b>
+            <ul>
+                <li><a href="#">Shipping Information</a></li>
+                <li><a href="#">My Favorites</a></li>
+                <li><a href="#">FAQ For Newsletter Subscription</a></li>
+                <li><a href="#">My Points</a></li>
+                <li><a href="#">Warranty and Return</a></li>
+                <li><a href="#">Payment Methods</a></li>
+                <li><a href="#">Deposit Expansion</a></li>
+                <li><a href="#">FAQ & Support</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">FAQs about COVID-19</a></li>
+            </ul>
+        </div>
+        <div id="serv3">
+            <b>Other Business</b>
+            <ul>
+                <li><a href="#">Partnership Programs</a></li>
+                <li><a href="#">Associate Program</a></li>
+                <li><a href="#">Merchant Program</a></li>
+                <li><a href="#">Visitor's Care</a></li>
+                <li><a href="#">Delivery Partners</a></li>
+                <li><a href="#">Packing Partners</a></li>
+                <li><a href="#">Sell on LaceUP Market</a></li>
+            </ul>
+        </div>
+        <div id="serv4">
+            <b>LaceUP Market</b>
+            <ul>
+                <li><a href="#">Save $3 with App & New User Only</a></li>
+                <li><a href="#">Customer Bill of Rights</a></li>
+                <li><a href="#">Product Recalls</a></li>
+                <li><a href="#">Internet Based Ads</a></li>
+                <li><a href="#">CA Transparency in Supply Chains Act</a></li>
+                <li><a href="#">Do Not Sell or Share My Personal Information</a></li>
+                <li><a href="#">LaceUP Ofiicial Blog</a></li>
+                <li><a href="#">LaceUP Wallet Instruction</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>Copyright © 2022-2023 LaceUP.com. All Rights Reserved by Vamshi Krishna.</footer>
+  </div>
+  <!-- footer ends -->
+
+    </div>
     
 </body>
 </html>
-<script src="./scripts/index.js"></script>
+<script src="./scripts/cart.js"></script>

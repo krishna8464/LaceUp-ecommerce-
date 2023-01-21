@@ -22,7 +22,7 @@ cartroute.get("/cart",async(req,res)=>{
         if(decoded){
             const data = await CartModel.find({userID:userid});
             if(data.length===0){
-                res.status(200).send("Cart is EMPTY!")
+                res.status(200).send({"msg":"Cart is EMPTY!"})
             }else{
                 res.status(200).send(data)
             }
@@ -60,13 +60,13 @@ cartroute.post("/cart",async(req,res)=>{
         if(decoded){
             const clarf = await CartModel.find({userID:userid,tilname:req.body.tilname,type:req.body.type,category:req.body.category});
             if(clarf.length>0){
-                res.status(200).send("Product already added")
+                res.status(200).send({"msg":"Product already added"})
             }else{
             
             req.body.userID =  userid;
             const cartt = new CartModel(req.body);
             await cartt.save()
-            res.status(200).send("Producd added to cart")
+            res.status(200).send({"msg":"Producd added"})
             }
         }else{
             res.status(401).send("NOt Autorizied")
@@ -89,7 +89,7 @@ cartroute.delete("/cart/delete/:id",async(req,res)=>{
             
             const userid = decoded.userid;
             const data = await CartModel.findByIdAndDelete({_id:id});
-            res.status(200).send("Producd deleted in cart")
+            res.status(200).send({"msg":"Producd deleted"})
         }else{
             res.status(401).send("NOt Autorizied")
         }

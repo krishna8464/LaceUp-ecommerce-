@@ -20,7 +20,7 @@ favroute.get("/fav",async(req,res)=>{
         if(decoded){
             const data = await FavModel.find({userID:userid});
             if(data.length===0){
-                res.status(200).send("Favorites is EMPTY!")
+                res.status(200).send({"msg":"Favorites is EMPTY!"})
             }else{
                 res.status(200).send(data)
             }
@@ -58,13 +58,13 @@ favroute.post("/fav",async(req,res)=>{
         if(decoded){
             const clarf = await FavModel.find({userID:userid,tilname:req.body.tilname,type:req.body.type,category:req.body.category});
             if(clarf.length>0){
-                res.status(200).send("Product already added")
+                res.status(200).send({"msg":"Product Already Added","status":200})
             }else{
             
             req.body.userID =  userid;
             const cartt = new FavModel(req.body);
             await cartt.save()
-            res.status(200).send("Producd added to favorites")
+            res.status(200).send({"msg":"Producd Added To","status":200})
             }
         }else{
             res.status(401).send("NOt Autorizied")
@@ -87,7 +87,7 @@ favroute.delete("/fav/delete/:id",async(req,res)=>{
             
             const userid = decoded.userid;
             const data = await FavModel.findByIdAndDelete({_id:id});
-            res.status(200).send("Producd deleted in favorites")
+            res.status(200).send({"msg":"Producd deleted"})
         }else{
             res.status(401).send("NOt Autorizied")
         }

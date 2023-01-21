@@ -6,7 +6,6 @@ const cartSchema = mongoose.Schema({
     tilname: String,
     price: Number,
     compvalue: String,
-    stars: String,
     rating: Number,
     userID:String
 },{
