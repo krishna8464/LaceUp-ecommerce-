@@ -12,6 +12,7 @@ Javascript
 Boosttrap
 # Features
 User and Admin authentication & validation with session uuid having.
+<br>
 Admin Features:
 Administrator Role of the entire application
 Only registered admins with valid session token can add/update/delete driver or customer from main database
