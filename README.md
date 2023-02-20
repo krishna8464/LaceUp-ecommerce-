@@ -48,4 +48,5 @@ Masterdata Module<br>
 -> POST   /user/feedback : To post the user feedback.<br>
 -> GET    /user/feedback : To get the feedbacks posted by the users.<br>
 # Demo
-Deployed Link : https://effortless-daffodil-5b9af6.netlify.app/
+Github link : https://github.com/krishna8464/-pricey-secretary-8466
+Netlify Deployed Link : https://effortless-daffodil-5b9af6.netlify.app/
